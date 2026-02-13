@@ -22,5 +22,17 @@ export async function maiidojaras() {
 }
 
 export function beolvas(){
+    const beolv = fs.readFileSync('idojaras.csv', 'utf-8')
+    const sor = beolv.trim().split('\n')
 
+    const lista = []
+
+    for(let i = 0; i < sor.length; i++){
+        const adat = sor[i].split(';')
+        const idojaras = new NapiIdojaras(adat[0], adat[1], adat[2], adat[3])
+        lista.push(idojaras)        
+    }
+
+    return lista
+    
 }
