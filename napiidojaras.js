@@ -7,6 +7,6 @@ export class NapiIdojaras {
     }    
 
     toString(){
-        return `Az időjárás: ${this.nap}, max hőmérséklet ${this.max}, min hőmérséklet ${this.min}, egyéb infó: ${this.leiras}`
+        return `Az időjárás: A hét ${this.nap}, max hőmérséklet ${this.max}, min hőmérséklet ${this.min}, egyéb infó: ${this.leiras}`
     }
 }
