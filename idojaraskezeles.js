@@ -19,6 +19,7 @@ export async function maiidojaras() {
     console.log(maiIdojaras)
 
     rl.close()    
+    return maiIdojaras
 }
 
 export function beolvas(){
@@ -27,7 +28,7 @@ export function beolvas(){
 
     const lista = []
 
-    for(let i = 0; i < sor.length; i++){
+    for(let i = 1; i < sor.length; i++){
         const adat = sor[i].split(';')
         const idojaras = new NapiIdojaras(adat[0], adat[1], adat[2], adat[3])
         lista.push(idojaras)        

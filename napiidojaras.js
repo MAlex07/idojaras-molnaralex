@@ -1,8 +1,8 @@
 export class NapiIdojaras {
     constructor(nap, max, min, leiras){
         this.nap = nap;
-        this.max = max;
-        this.min = min;
+        this.max = parseInt(max);
+        this.min = parseInt(min);
         this.leiras = leiras;
     }    
 

@@ -16,3 +16,11 @@ console.log(mai)
 
 beolvasott.push(mai)
 console.log(beolvasott)
+
+let legmelegebb = 0;
+for(let i = 0; i < beolvasott.length; i++){
+    if(beolvasott[i].max > beolvasott[legmelegebb].max){
+        legmelegebb = i;}
+}
+
+console.log(`A legmelegebb nap ${legmelegebb}-on volt`)
